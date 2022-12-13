@@ -1,0 +1,380 @@
+<?php get_header(); ?>
+<!-- START BANNER -->
+<section class="slider_sec position-relative">
+    <div id="primary" class="content-area">
+        <main id="main" class="site-main" role="main">
+            <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel" data-interval="3000">
+        <div class="carousel-inner">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleControls" data-slide-to="0" class="active">01</li>
+                <li data-target="#carouselExampleControls" data-slide-to="1">02</li>
+                <li data-target="#carouselExampleControls" data-slide-to="2">03</li>
+            </ol>
+            <div class="carousel-item active">
+                <div class="carousel-caption w-100">
+                    <div class="custom-container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h5>Intervention <span>Services</span></h5>                                
+                                <p>Brisbane Dispute Resolve Assistance</p>
+                                <h6>Has some expertise in assisting you with tracking down an answer.</h6>
+                                <div class="bnr-anr">
+                                    <a href="http://localhost/skill/company-overview/">RESOURCES & DOCUMENTS</a>
+                                    <a href="http://localhost/skill/speaking/">Booking</a>
+                                </div>
+                                <?php
+                    $query = new WP_Query(array(
+                        'post_type' => 'sevices',
+                        'posts_per-page' => 4
+                 ));?>
+                 <?php query_posts($query) ?>
+                <?php while($query->have_posts()) : $query->the_post();?>
+                                <div class="bnr-grids">
+                                    <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic1.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h1.png">
+                                        <h4>Identify</h4>
+                                        <a href="<?php the_permalink(); ?>"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>
+                                    <?php endwhile ?>
+                                    <!-- <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic2.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h2.png">
+                                        <h4>Assess</h4>
+                                        <a href="http://localhost/skill/speaking/"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>
+                                    <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic3.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h3.png">
+                                        <h4>understand</h4>
+                                        <a href="http://localhost/skill/speaking/"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>
+                                    <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic4.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h4.png">
+                                        <h4>cope</h4>
+                                        <a href="http://localhost/skill/speaking/"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>
+                                    <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic5.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h5.png">
+                                        <h4>strategy</h4>
+                                        <a href="http://localhost/skill/speaking/"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>
+                                    <div class="grd-m"><div class="b-grd1">
+                                        <img alt="" class="gr-m" src="<?php echo get_template_directory_uri()?>/images/bic6.png">
+                                        <img alt="" class="gr-hov" src="<?php echo get_template_directory_uri()?>/images/bic-h6.png">
+                                        <h4>recovery procedures</h4>
+                                        <a href="http://localhost/skill/speaking/"><h6>Read More</h6><img alt="" src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                                    </div></div>  -->                                   
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="custom-container position-relative">
+            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section class="srv-m py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="left-ht">
+                    <p>Variations fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+                    <p>Distribution of letters, as opposed to using 'Content here, content here', making it look like readable editors now use lorem.</p>
+                    <h4><span>1</span>Comercial & <br>Corporate</h4>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="main-hs">
+                    <h6>Service</h6>
+                    <h5>Category</h5>
+                    <div class="mh-l"><img src="<?php echo get_template_directory_uri()?>/images/sm1.png"></div>
+                    <div class="mh-r"><img src="<?php echo get_template_directory_uri()?>/images/sm2.png"></div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="right-ht">
+                    <h4><span>2</span>franchising<br>mediation</h4>
+                    <p>Established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal</p>
+                    <p>Distribution of letters, as opposed to using 'Content here, content here', making it look like readable editors now use lorem.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="welcomesec pb-5">
+    <div class="custom-container">
+       <div class="row align-items-center">
+           <div class="col-md-4">
+             <div class="w-img">
+                 <img alt="" class="w-100" src="<?php echo get_template_directory_uri()?>/images/abt-img.png">
+             </div>  
+           </div>
+           <div class="col-md-7 offset-md-1">
+               <div class="welcome-txt">
+                   <h5>Welcome to</h5>
+                   <h4>SKILLED CREW PTY LTD</h4>
+                   <p>Brisbane Dispute Resolution mediation is here to assist you in resolving a conflict in a way in which everyone<br> benefits.  Mediation is a great alternative to settling disputes in the court system.</p>
+                   <p>We promote open communication between our Clients (in the strictest confidentiality) to solve <br>disputes to save you time and money in the long run. By employing the facilitative  mediation <br>process, we create the right environment for you to talk.</p>
+                   <a href="http://localhost/skill/about-us/">READ MORE</a>
+               </div>
+           </div>
+       </div> 
+    </div>
+</section>
+<section class="whatsec mt-5 py-5">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="single-wh-grd">
+                    <img alt="" src="<?php echo get_template_directory_uri()?>/images/wi1.png">
+                    <h6>Why Mediation?</h6>
+                    <p>Mediation is a structured negotiation process in which an independent person, known as a mediator, assists the parties to identify and assess options, and negotiate</p>
+                    <a href="http://localhost/skill/mediation/">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-wh-grd">
+                    <img alt="" src="<?php echo get_template_directory_uri()?>/images/wi2.png">
+                    <h6>What we do?</h6>
+                    <p>Brisbane Dispute Resolution gives you closure. We assist you in finding a solution for a business dispute without the costly and time consuming process of using the court system.</p>
+                    <a href="http://localhost/skill/what-we-do/">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="single-wh-grd">
+                    <img alt="" src="<?php echo get_template_directory_uri()?>/images/wi3.png">
+                    <h6>Meet our team</h6>
+                    <p>Success has come from knowledge of the market, friends and colleagues who have supported me, and respect for customers and the people who work in the business</p>
+                    <a href="http://localhost/skill/meet-the-team/">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="servsec">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="of-txt11">
+                    <h5>Services</h5>
+                    <p>Rutrum a mauris. Duis elementum diam at massa porta volutpat. Vivamus in tincidunt erat, id lacinia metus. Cras aliquam <br>lacus risus, non ultricies nibh sollicitudin id vivamus ullamcorper posuere vestibulum donec.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="custom-container">
+        <div class="main-s-grids mt-5">
+            <div class="row justify-content-center">
+                 <?php
+                    $query = new WP_Query(array(
+                        'post_type' => 'sevices',
+                        'posts_per-page' => 4
+                 ));?>
+                 <?php query_posts($query) ?>
+                <?php while($query->have_posts()) : $query->the_post();?>   
+                <div class="col-md-3">
+                    <div class="shadowsec">
+                        <img src="<?php echo get_template_directory_uri()?>/images/sd1.png">
+                    </div>
+                    <div class="single-sr">
+                        <img class="l-pin" src="<?php echo get_template_directory_uri()?>/images/pin-l.png" alt="">
+                        <img class="r-pin" src="<?php echo get_template_directory_uri()?>/images/pin-r.png" alt="">
+                       <?php the_post_thumbnail(); ?>
+                       <h6><?php the_title(); ?></h6>
+                       <p> <?php the_excerpt(); ?></p>
+                       <a href="<?php the_permalink(); ?>"><h5>More Details</h5><img src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                    </div>
+                </div>
+              <?php endwhile ?>
+                <!-- <div class="col-md-3">
+                    <div class="shadowsec">
+                        <img src="<?php echo get_template_directory_uri()?>/images/sd2.png">
+                    </div>
+                    <div class="single-sr">
+                        <img class="l-pin" src="<?php echo get_template_directory_uri()?>/images/pin-l.png" alt="">
+                        <img class="r-pin" src="<?php echo get_template_directory_uri()?>/images/pin-r.png" alt="">
+                       <img src="<?php echo get_template_directory_uri()?>/images/s-ic2.png" alt="">
+                       <h6>Conflict Assessments</h6>
+                       <p>We will endeavour to take all reasonable steps to keep secure any information.</p>
+                       <a href="http://localhost/skill/workspace-conflict-management/"><h5>More Details</h5><img src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shadowsec">
+                        <img src="<?php echo get_template_directory_uri()?>/images/sd3.png">
+                    </div>
+                    <div class="single-sr">
+                        <img class="l-pin" src="<?php echo get_template_directory_uri()?>/images/pin-l.png" alt="">
+                        <img class="r-pin" src="<?php echo get_template_directory_uri()?>/images/pin-r.png" alt="">
+                       <img src="<?php echo get_template_directory_uri()?>/images/s-ic3.png" alt="">
+                       <h6>Conflict Coaching</h6>
+                       <p>For enhanced results Armistice offers one-on-one mentoring to develop dispute.</p>
+                       <a href="http://localhost/skill/workspace-conflict-management/"><h5>More Details</h5><img src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shadowsec">
+                        <img src="<?php echo get_template_directory_uri()?>/images/sd4.png">
+                    </div>
+                    <div class="single-sr">
+                        <img class="l-pin" src="<?php echo get_template_directory_uri()?>/images/pin-l.png" alt="">
+                        <img class="r-pin" src="<?php echo get_template_directory_uri()?>/images/pin-r.png" alt="">
+                       <img src="<?php echo get_template_directory_uri()?>/images/s-ic4.png" alt="">
+                       <h6>Commercial Negotiation</h6>
+                       <p>Mediation is a structured negotiation process.</p>
+                       <a href="http://localhost/skill/negotiations/"><h5>More Details</h5><img src="<?php echo get_template_directory_uri()?>/images/go.png"></a>
+                    </div>
+                </div> -->
+            </div>
+            <a class="s-rd" href="http://localhost/skill/our-service/">View More</a>
+        </div>
+    </div>
+</section>
+<section class="managesec py-5">
+    <div class="custom-container">
+        <div class="row align-items-center">
+            <div class="col-md-5">
+                <div class="manage-txt">
+                    <h5>Management Consulting</h5>
+                    <p>Brisbane Dispute Resolution is focused on providing clients with professional and tailored solutions related to complete reviews within organisation and operational environments, change management and workplace conflict resolution.</p>
+                    <h6>Brisbane Dispute Resolution provides professional consulting in the areas of:</h6>
+                    <p>Organisational reviews – includes review of an organisation’s effectiveness and efficiencies in relation to human resource and operational structures, policies and procedures, readiness for change, and managing change in the workplace.</p>
+                    <a href="http://localhost/skill/management-consulting/">Read More</a>
+                </div>
+            </div>
+            <div class="col-md-5 offset-md-2">
+                <div class="manage-img">
+                   <img class="w-100" alt="" src="<?php echo get_template_directory_uri()?>/images/mg-consult.png"> 
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="ofksec py-5">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="of-txt">
+                    <h5>One of a Kind Personalized Attention</h5>
+                    <p>Supporting our customer focused strategy is a strong set of company-wide values, which<br> are well embedded in our culture. These are:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-md-4">
+                <div class="of-imgsec">
+                    <img class="w-100" alt="" src="<?php echo get_template_directory_uri()?>/images/abt2.png">
+                </div>
+            </div>
+            <div class="col-md-7 offset-md-1">
+                <div class="of-txt1">
+                    <div class="of-st">
+                        <div class="of-img">
+                           <img class="w-auto" alt="" src="<?php echo get_template_directory_uri()?>/images/st1.png"> 
+                        </div>
+                        <div class="of-tx">
+                           <h6>Delighting Customers</h6>
+                           <p>By deeply understanding and exceeding their expectations</p>
+                        </div>
+                    </div>
+                    <div class="of-st">
+                        <div class="of-img">
+                           <img class="w-auto" alt="" src="<?php echo get_template_directory_uri()?>/images/st2.png"> 
+                        </div>
+                        <div class="of-tx">
+                           <h6>One Team</h6>
+                           <p>Working and learning together respectfully, valuing each other, to deliver the greatest<br> value and desired outcomes for customers and the organisation</p>
+                        </div>
+                    </div>
+                    <div class="of-st">
+                        <div class="of-img">
+                           <img class="w-auto" alt="" src="<?php echo get_template_directory_uri()?>/images/st3.png"> 
+                        </div>
+                        <div class="of-tx">
+                           <h6>Integrity</h6>
+                           <p>Each employee demonstrates honesty, accountable for their actions and doing the <br>right thing</p>
+                        </div>
+                    </div>
+                    <!--<a class="rd-mr" href="#">Know More</a> -->
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="addsectn py-5">
+    <div class="custom-container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="addtx">
+                    <h5>Brisbane Dispute Resolution specialises in helping<br>you find a solution</h5>
+                    <h6>contact us<span>today</span><b>on</b></h6>
+                    <h4>1800 137 137</h4>
+                    <p>to discuss your options</p>
+                    <a href="http://localhost/skill/speaking/">ASK FOR CONSULTATION</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="c-testimonials">
+   <div class="custom-container">
+       <div class="row">
+           <div class="col-md-12">
+               <div class="test-heading">
+                   <h5>What Our Clients Say</h5>
+                   <p>We are proud to work shoulder-to-shoulder with our clients, sharing our knowledge to deliver <br>exceptional results with lasting impact.</p>
+               </div>
+           </div>
+       </div>
+       <div class="container">
+           <div class="main-slsec">
+               <div class="row">
+                   <div class="col-md-12">
+                       <div class="test-slide2 owl-carousel">
+                           <div class="tst-txtsec">
+                               <h6>Name Removed to <br>protect Privacy and<br> Confidentialit</h6>
+                               <h4>Communication Barriers</h4>
+                               <p>I found this service to be extremely helpful in supporting both myself and my ex-husband to a resolution agreement.</p>
+                               <div class="test-img">
+                                   <img class="w-auto" src="<?php echo get_template_directory_uri()?>/images/hd1.png">
+                               </div>
+                           </div>
+                           <div class="tst-txtsec">
+                               <h6>Townsville City <br>Council</h6>
+                               <h4>Rescue Project</h4>
+                               <p>“KMD partnered with Coast to Country Consulting an organisation that has demonstrated: -Knowledge and experience in the organisational.</p>
+                               <div class="test-img">
+                                   <img class="w-auto" src="<?php echo get_template_directory_uri()?>/images/hd2.png">
+                               </div>
+                           </div>
+                           <div class="tst-txtsec">
+                               <h6>Queensland State<br>Government Department</h6>
+                               <h4>Conflict Management</h4>
+                               <p>“We enjoyed the training and found it extremely beneficial. Not only will we use it in conflict coaching situations, but as we discussed.</p>
+                               <div class="test-img">
+                                   <img class="w-auto" src="<?php echo get_template_directory_uri()?>/images/hd3.png">
+                               </div>
+                           </div>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+   </div> 
+</section>
+<?php
+get_footer(); ?>
+
